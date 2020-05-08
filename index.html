@@ -1,115 +1,77 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="images/favicon.ico">
-
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Portfolio</h1>
-						<p>Hi! My name is Vaibhav Dalmia. I am an Undergraduate at IIT Indore. I am a Data Science and Machine Learning enthusiast.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">CreateAI</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="projects.html">Projects</a></li>
-							<li><a href="library.html">Library</a></li>
-							<li><a href="aboutme.html">About Me</a></li>
-						
-						</ul>
-						<ul class="icons">
-							<li><a href="https://twitter.com/DalmiaVaibhav" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.linkedin.com/in/vaibhav-dalmia-a4b023179" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/vaibhavdl" class="icon fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-				<div id="main">
-
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<!-- <span class="date"> It's never too late to start.</span> -->
-									<h1>Data Science</h1>
-									<p>Do you love solving AI problems?</p>	
-								</header>
-								<div class="image main"><img src="images/data.jpg" alt="" /></div>
-								<p>Artificial Intelligence – specifically machine learning and deep learning – was everywhere in 2018 and don’t expect the hype to die down over the next 12 months. </p>
-								<p>The hype will die eventually of course, and AI will become another consistent thread in the tapestry of our lives, just like the internet, electricity, and combustion did in days of yore.
-
-										But for at least the next year, and probably longer, expect astonishing breakthroughs as well as continued excitement and hyperbole from commentators.</p>
-								<p>This is because expectations of the changes to business and society which AI promises (or in some cases threatens) to bring about go beyond anything dreamed up during previous technological revolutions.
-
-
-										AI points towards a future where machines not only do all of the physical work, as they have done since the industrial revolution but also the “thinking” work – planning, strategizing and making decisions. </p>		
-							</section>
-
-					</div>
-
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>A.P.J Abdul Kalam Hostel IIT Indore, Simrol<br />
-								Madhya Pradesh, India</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p>>+91-8685848982</p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p>me170003058@iiti.ac.in</p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://twitter.com/DalmiaVaibhav" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.linkedin.com/in/vaibhav-dalmia-a4b023179" class="icon alt fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/vaibhavdl" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; CreateAI</li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Terminal</title>
+</head>
+<body class="font-body overflow-auto">
+    <div class="flex">
+        
+        <!--Terminal-->
+        <div class="fixed bg-black w-1/3 h-screen px-4 py-5 text-base text-terminal-green">
+            <p class="mb-4">hello there, stranger <br> type 'help' for a list of commands:</p>
+            <ul id="history">
+            </ul>
+            <ul>
+                <li>$ <input id="input" class="bg-black outline-none" type="text" maxlength="15" autofocus spellcheck="false"></li>
+            </ul>
+        </div>
+        
+        <!--Main Sidebar-->
+        <div class="flex flex-col items-end w-screen">
+         
+            <!--home-->
+            <div id="home" class="w-2/3 mt-10 flex flex-col items-center">
+                <h1 class="text-2xl font-bold">&lt;Vaibhav Dalmia&gt;</h1>
+                <h1 class="text-xl mt-4 ">dalmiavaibhav6@gmail.com</h1>
+                <div class="my-8"><img src="images/icon.png" alt=""></div>
+                <p class="text-xl">use the terminal or scrolling to navigate through the website.</p>
+            </div>
+            
+            <!--about_me-->
+            <div id="aboutme" class="w-2/3 mt-32 flex flex-col items-center ">
+                <h1 class="text-2xl font-bold">&lt;about_me&gt;</h1>
+                <p class="text-xl mt-4">I love programming</p>
+                
+                <div class="flex flex-col self-start ml-8">
+                    <p class="text-xl my-8">I am really interested in:</p>
+                    <ul class="text-xl space-y-4">
+                        <li>- programming competitions</li>
+                        <li>- entrepreneurship</li>
+                        <li>- data structures and algorithms</li>
+                        <li>- ai and machine learning</li>
+                    </ul>
+                    <p class="text-xl mt-12">I am just an enthusiast, but a really motivated one.</p>
+                    <p class="text-xl mt-4">100% motivated at the moment </p>
+                </div>
+            </div>
+            
+            <!--projects-->
+            <div id="projects" class="w-2/3 mt-32 flex flex-col items-center">
+                <h1 class="text-2xl font-bold">&lt;projects&gt;</h1>
+                <p class="text-xl mt-4">coming soon</p>
+              
+            </div>
+            
+            <!--resume_and_contact-->
+            <div id="resume" class="w-2/3 mt-32 flex flex-col items-center">
+                <h1 class="text-2xl font-bold">&lt;resume_and_contact&gt;</h1>
+                <p class="text-xl mt-4">hope to hear from you</p>
+                <div class="ml-8 text-xl self-start"> 
+                    <p class="my-8">resume => I have a pdf resume! </p>
+                    <p class="my-8">contact info</p>
+                    <ul class="text-xl space-y-4">
+                        <li>- github => <a class="text-navy-blue" href="#">https://github.com/vaibhavdl</a></li>
+                        <li>- twitter => <a class="text-navy-blue" href="#">https://twitter.com/DalmiaVaibhav</a></li>
+                        <li>- email => <a class="text-navy-blue" href="#">dalmiavaibhav6@gmail.com</a></li>
+                    </ul>
+                    <p class="my-8">nice to meet you</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+</html> 
