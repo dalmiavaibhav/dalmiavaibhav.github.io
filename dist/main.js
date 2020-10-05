@@ -5,29 +5,27 @@ const aboutme = document.getElementById('aboutme');
 const projects = document.getElementById('projects');
 const resume = document.getElementById('resume');
 
-//const pos = {'home':0, 'aboutme':730, 'projects':1350, 'resume':1500};
 
-
-function addelement(value){
-    if(history.childElementCount<=25){
+function addelement(value) {
+    if (history.childElementCount <= 25) {
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(`${value}`));
         history.appendChild(li);
-        command.value='';
+        command.value = '';
     }
-    else{
+    else {
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(`${value}`));
         history.firstElementChild.remove();
         history.appendChild(li);
-        command.value='';
+        command.value = '';
     }
 }
 
-function logKey(e){ 
-    if(e.code === 'Enter'){
+function logKey(e) {
+    if (e.code === 'Enter') {
         value = command.value;
-        switch(value){
+        switch (value) {
             case 'help':
                 addelement(`$ ${value}`);
                 addelement(`navigation commands`);
@@ -59,12 +57,12 @@ function logKey(e){
             case '':
                 addelement(`$ ${value}`);
                 break;
-            default:    
+            default:
                 addelement(`$ ${value}`);
                 addelement(`${value}: command not found`);
                 break;
-        }       
-    }  
+        }
+    }
 }
 
-command.addEventListener('keydown', logKey );
+command.addEventListener('keydown', logKey);
